@@ -1,0 +1,32 @@
+---
+title: "pander-practice"
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(pander)
+
+```
+
+
+
+## Pander Practice
+
+```{r iris}
+summary(iris)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r table-1, echo=FALSE}
+pander(iris)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
